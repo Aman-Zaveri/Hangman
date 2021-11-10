@@ -14,10 +14,11 @@ themes = []
 words = []
 
 letterWordsChecker = False
+index = 0
 
 #Finding all the themes
-for beginningThemes in startingThemes:
-    startingWord = soup.find_all(beginningThemes)
+while index < 4:
+    startingWord = soup.find_all(text=startingThemes[index])
     startingWordParent = startingWord[0].parent
     themesParent = startingWordParent.parent
 
@@ -28,6 +29,8 @@ for beginningThemes in startingThemes:
         for topics in themes:
             if topics == '':
                 themes.remove(topics)
+
+    index += 1
 
 #CHoosing theme
 while letterWordsChecker == False:
