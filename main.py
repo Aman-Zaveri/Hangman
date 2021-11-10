@@ -7,7 +7,6 @@ from hangmanVisual import livesVisual
 def getVaildWord():
     word = chosenWord
     return word.upper()
-    print(chosenWord)
 
 def getValidTheme():
     theme = chosenTheme
