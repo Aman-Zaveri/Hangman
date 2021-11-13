@@ -58,6 +58,6 @@ def playHangman():
     else:
         print(f"Sorry! You ran out of lives! The word was {word}!")
     
-print("Thank you for playing! Hope you come again! ")
+    print("Thank you for playing! Hope you come again! ")
 
 playHangman()
